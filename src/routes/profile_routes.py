@@ -13,4 +13,8 @@ def login(username):
 @main.route("/accounts")
 def logout():
     return render_template("logout.html")
-    
+
+
+@main.route("/me/<username>")
+def profile(username):
+    return render_template("profile.html", username=username)
