@@ -18,3 +18,7 @@ def logout():
 @main.route("/me/<username>")
 def profile(username):
     return render_template("profile.html", username=username)
+
+@main.route("/verify/<username>")
+def verify(username):
+    return render_template("verify.html", username=username)   
