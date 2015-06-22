@@ -26,3 +26,7 @@ def verify(username):
 @main.route("/settings/<username>")
 def settings(username):
     return render_template("settings.html", username=username)  
+
+@main.route("/dashboard/<username>")
+def dashboard(username):
+    return render_template("dashboard.html", username=username)
