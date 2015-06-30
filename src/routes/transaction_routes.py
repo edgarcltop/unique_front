@@ -16,3 +16,11 @@ def profile():
 @main.route("/verify")
 def verify():
     return render_template("verify.html")
+
+@main.route("/verify")
+def verify():
+    return render_template("verify.html")
+
+@main.route("/settings")
+def settings():
+    return render_template("settings.html")
