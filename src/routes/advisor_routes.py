@@ -26,3 +26,8 @@ def advisor_settings(username):
 @main.route("/advisor/settings/<username>")
 def advisor_settings(username):
     return render_template("advisor_settings.html", username=username)
+
+
+@main.route("/advisor/settings/<username>")
+def advisor_settings(username):
+    return render_template("advisor_settings.html", username=username)
