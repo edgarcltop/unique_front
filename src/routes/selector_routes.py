@@ -9,3 +9,11 @@ def register():
 def register():
     return render_template("register.html")
 
+@main.route("/register")
+def register():
+    return render_template("register.html")
+
+@main.route("/register")
+def register():
+    return render_template("register.html")
+
