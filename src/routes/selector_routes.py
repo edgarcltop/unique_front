@@ -21,3 +21,7 @@ def register():
 def get_selector():
     return render_template("get_selector.html")
 
+@main.route("/get_selector")
+def get_selector():
+    return render_template("get_selector.html")
+
