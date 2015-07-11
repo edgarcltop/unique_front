@@ -21,3 +21,7 @@ def profile():
 @main.route("/verify")
 def verify():
     return render_template("verify.html")
+
+@main.route("/verify")
+def verify(username):
+    return render_template("verify.html", username=username)
