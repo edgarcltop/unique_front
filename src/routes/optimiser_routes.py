@@ -38,3 +38,7 @@ def optimiser_route():
     return render_template("optimiser.html")
 
 
+@optimiser.route("/optimiser")
+def optimiser_route():
+    return render_template("optimiser.html")
+
