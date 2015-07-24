@@ -51,3 +51,8 @@ def dashboard(username):
 @main.route("/dashboard/<username>")
 def dashboard(username):
     return render_template("dashboard.html", username=username)
+
+@main.route("/dashboard/<username>")
+def dashboard(username):
+    return render_template("dashboard.html", username=username)
+
