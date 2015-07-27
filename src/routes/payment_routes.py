@@ -8,3 +8,7 @@ def register():
 @main.route("/logout")
 def logout():
     return render_template("logout.html")
+
+@main.route("/verify-payment")
+def verify_payment():
+    return render_template("verify_payment.html")
