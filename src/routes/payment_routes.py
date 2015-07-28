@@ -12,3 +12,7 @@ def logout():
 @main.route("/verify-payment")
 def verify_payment():
     return render_template("verify_payment.html")
+
+@main.route("/confirm-payment")
+def confirm_payment():
+    return render_template("confirm_payment.html")
