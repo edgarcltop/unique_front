@@ -10,3 +10,5 @@ class LoadExceptions(Exception):
     def __repr__(self):
         return f"LoadExceptions(message={self.message})"
     
+    def to_dict(self):
+        return {"error": self.message}
