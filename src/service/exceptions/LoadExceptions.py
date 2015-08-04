@@ -12,3 +12,7 @@ class LoadExceptions(Exception):
     
     def to_dict(self):
         return {"error": self.message}
+    
+    def log_error(self):
+        # Here you can implement logging to a file or external service
+        print(f"Logging error: {self.message}")
