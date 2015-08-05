@@ -16,3 +16,7 @@ class LoadExceptions(Exception):
     def log_error(self):
         # Here you can implement logging to a file or external service
         print(f"Logging error: {self.message}")
+
+    def notify_admin(self, admin_email):
+        # Here you can implement email notification to admin
+        print(f"Notifying admin at {admin_email}: {self.message}")
