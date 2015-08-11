@@ -14,3 +14,11 @@ class User:
             "email": self.email,
             "password": self.password
         }
+    
+    def from_dict(data: dict):
+        return User(
+            user_id=data.get("user_id"),
+            username=data.get("username"),
+            email=data.get("email"),
+            password=data.get("password")
+        )
