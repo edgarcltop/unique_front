@@ -23,5 +23,7 @@ class User:
             password=data.get("password")
         )
     def update_email(self, new_email: str):
-        self.email = new_email 
-        
+        self.email = new_email
+
+    def update_password(self, new_password: str):
+        self.password = new_password
