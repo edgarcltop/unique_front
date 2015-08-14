@@ -27,3 +27,6 @@ class User:
 
     def update_password(self, new_password: str):
         self.password = new_password
+
+    def greet(self):
+        return f"Hello, {self.username}!"
