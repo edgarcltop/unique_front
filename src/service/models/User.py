@@ -28,5 +28,8 @@ class User:
     def update_password(self, new_password: str):
         self.password = new_password
 
-    def greet(self):
+    def greet(self):        
         return f"Hello, {self.username}!"
+    
+    def is_valid_email(self):
+        return "@" in self.email and "." in self.email.split("@")[-1]
