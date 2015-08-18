@@ -33,3 +33,6 @@ class User:
     
     def is_valid_email(self):
         return "@" in self.email and "." in self.email.split("@")[-1]
+    
+    def check_password(self, password: str):
+        return self.password == password
