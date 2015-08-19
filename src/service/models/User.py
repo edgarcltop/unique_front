@@ -36,3 +36,6 @@ class User:
     
     def check_password(self, password: str):
         return self.password == password
+    
+    def change_username(self, new_username: str):
+        self.username = new_username
