@@ -39,3 +39,6 @@ class User:
     
     def change_username(self, new_username: str):
         self.username = new_username
+
+    def display_info(self):
+        return f"User ID: {self.user_id}, Username: {self.username}, Email: {self.email}"
